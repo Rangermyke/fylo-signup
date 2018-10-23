@@ -10,9 +10,13 @@ body, h1, h2, h3, h4, h5, p, blockquote, pre, hr, dl, dd, ol, ul, figure{
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 body #left, #right {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 50%;
   justify-content: center;
 }
@@ -33,7 +37,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  height: 95%;
   width: 50%;
 }
 
@@ -63,6 +67,10 @@ main {
 
 h1 {
   display: flex;
+  margin: 25px;
+}
+
+p {
   margin: 25px;
 }
 
