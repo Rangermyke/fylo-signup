@@ -1,0 +1,19 @@
+#left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+header > ul {
+  list-style: none;
+}
