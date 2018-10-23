@@ -1,4 +1,6 @@
 
+@import url(https://fonts.google.com/specimen/Ubuntu);
+
 body, h1, h2, h3, h4, h5, p, blockquote, pre, hr, dl, dd, ol, ul, figure{
   margin: 0;
   padding: 0;
@@ -8,15 +10,32 @@ body, h1, h2, h3, h4, h5, p, blockquote, pre, hr, dl, dd, ol, ul, figure{
   box-sizing: border-box;
 }
 
+body #left, #right {
+  display: flex;
+  height: 100%;
+  width: auto;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+
+}
+
 #left {
   display: flex;
   justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+  background-color: black;
 }
 
 #right {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  height: 100%;
+  width: 50%;
 }
 
 header {
@@ -41,4 +60,15 @@ main {
   display: flex;
   flex-direction: column;
   flex: auto;
+}
+
+h1 {
+  display: flex;
+  margin: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
 }
