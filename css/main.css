@@ -14,24 +14,6 @@ html {
   height: 100vh;
 }
 
-body #left, #right {
-  display: flex;
-  height: 100vh;
-  width: 50%;
-  justify-content: center;
-}
-
-h1, h2, h3, h4 {
-  font-family: Raleway;
-  font-weight: 700;
-  margin: 25px;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400, 700;
-}
-
 body {
   display: flex;
 }
@@ -40,11 +22,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 50%;
   background-image: linear-gradient(45deg, hsl(243, 86%, 85%), hsl(243, 87%, 12%));
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 #right {
   display: flex;
   justify-content: center;
@@ -62,11 +48,9 @@ header {
 }
 
 header > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100px;
   display: flex;
+  list-style: none;
+  width: 150px;
   justify-content: space-between;
 }
 
@@ -75,18 +59,26 @@ main {
   width: 85%;
 }
 
-h1 {
-
+h1, h2, h3, h4 {
+  font-family: 'Raleway', arial, sans-serif;
+  font-weight: 700;
+  margin: 25px;
 }
 
 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400, 700;
   margin: 25px;
 }
+
 
 button {
   background-color: hsl(163, 95%, 43%);
   color: white;
   border: none;
+  height: 30px;
+  width: 100px;
+  font-size: 16pt;
 }
 
 legend {
@@ -96,6 +88,38 @@ legend {
 
 label {
   font-family: 'open sans';
+}
+
+fieldset {
+  display: flex;
+  border: none;
+  margin: 0 auto;
+  width: 75%;
+  flex-direction: row;
+}
+
+form {
+  margin: 3em 0;
+}
+
+form input {
+  width: 250px;
+  height: 25px;
+  background: #fff;
+  font: inherit;
+  border: none;
+  outline: 0;
+  padding: 0;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1)
+}
+
+.hidden {
+  position: absolute;
+  left:-10000px
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 footer {
